@@ -1,0 +1,372 @@
+{
+  "intents": [
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Bom dia beleza?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pedir_pizza",
+      "examples": [
+        {
+          "text": "quero pedir uma pizza"
+        },
+        {
+          "text": "eu gostaria de fazer um pedido"
+        },
+        {
+          "text": "me vê uma pizza"
+        },
+        {
+          "text": "iniciar pedido de pizza"
+        },
+        {
+          "text": "por favor quero fazer meu pedido"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "localizacao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sao paulo",
+          "synonyms": [
+            "sp ",
+            "011"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_massa",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "massa fina",
+          "synonyms": [
+            "fina"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "massa grossa",
+          "synonyms": [
+            "grossa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sabor",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "mussarela",
+          "synonyms": [
+            "queijo",
+            "muzarella"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Atum",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pepperoni",
+          "synonyms": [
+            "calabresa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Você nao informou um sabor válido"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1584036500667",
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1584036596869",
+      "previous_sibling": "handler_7_1584036500683"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual sabor vc quer?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1584036500667",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1584036500683",
+      "previous_sibling": "handler_3_1584036500683"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1584036500667",
+      "context": {
+        "sabor": "@sabor"
+      },
+      "conditions": "@sabor",
+      "event_name": "input",
+      "dialog_node": "handler_3_1584036500683"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Que tipo de massa vc gostaria?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1584036624638",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1584036624645",
+      "previous_sibling": "handler_3_1584036624645"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Vc nao informou um tipo de massa válido"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1584036624638",
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1584036645294",
+      "previous_sibling": "handler_5_1584036624645"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1584036624638",
+      "context": {
+        "tipo_massa": "@tipo_massa"
+      },
+      "conditions": "@tipo_massa",
+      "event_name": "input",
+      "dialog_node": "handler_3_1584036624645"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1584036445429",
+      "variable": "$tipo_massa",
+      "dialog_node": "slot_9_1584036624638",
+      "previous_sibling": "slot_2_1584036500667"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1584036445429",
+      "variable": "$localizacao",
+      "dialog_node": "slot_2_1584038743232",
+      "previous_sibling": "slot_9_1584036624638"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1584036445429",
+      "variable": "$sabor",
+      "dialog_node": "slot_2_1584036500667"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Para onde é o envio?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1584038743232",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1584038743236",
+      "previous_sibling": "handler_4_1584038743236"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "O resumo do seu pedido foi, $sabor $tipo_massa $localizacao"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1584038743232",
+      "conditions": "$sabor $tipo_massa $localizacao",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1584038816344",
+      "previous_sibling": "handler_7_1584038809697"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Não entendi"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1584038743232",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1584038809697",
+      "previous_sibling": "handler_10_1584038743236"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1584038743232",
+      "context": {
+        "localizacao": "@localizacao"
+      },
+      "conditions": "@localizacao",
+      "event_name": "input",
+      "dialog_node": "handler_4_1584038743236"
+    },
+    {
+      "type": "standard",
+      "title": "Saudaçao",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Opa e ai? Ja decidiu oque vai pedir?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#saudacao",
+      "dialog_node": "node_4_1584036352238",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_7_1584036445429",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Pedir Pizza",
+      "output": {
+        "generic": [
+          {
+            "title": "O resumo do seu pedido foi $sabor, $tipo_massa, $localizacao",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#pedir_pizza",
+      "dialog_node": "node_7_1584036445429",
+      "previous_sibling": "node_4_1584036352238"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, Bem vindo a pizzaria, como posso ajudar?"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "excluir",
+  "language": "pt-br",
+  "description": ""
+}
