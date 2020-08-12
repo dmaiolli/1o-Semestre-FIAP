@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Conteudo -->
+    <div class="container">
+        <!-- Primeiro conteudo -->
+        <div class="primary">
+            <h2>Formulario de Contato</h2>
+            <!-- Icone - fonte Awesome -->
+            <span class="fas fa-universal-access icone"></span>
+
+            <!-- Icone - redes Socias -->
+            <p>
+                <a href=""><span class="fab fa-instagram redeSocial"></span></a>
+                <a href=""><span class="fab fa-twitter redeSocial"></span></a>
+                <a href=""><span class="fab fa-youtube redeSocial"></span></a>
+                <a href=""><span class="fab fa-facebook-f redeSocial"></span></a>
+            </p>
+        </div>
+        <!--FIM Primeiro conteudo -->
+
+        <!-- Segundo conteudo -->
+        <div class="secundary">
+            <form id="contato" method="POST">
+
+                <fieldset>
+                    <input type="text" id="nome" class="user" placeholder="Seu nome" required autofocus>
+                </fieldset>
+
+                <fieldset>
+                    <input type="email" id="email" class="email" placeholder="Seu email" required>
+                </fieldset>
+
+                <fieldset>
+                    <input type="tel" id="fone" class="celular" placeholder="Seu telefone" required>
+                </fieldset>
+
+                <fieldset>
+                    <input type="tel" id="celular" class="phone" placeholder="Seu celular" required>
+                </fieldset>
+
+                <fieldset>
+                    <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit" id="botao">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+        <!--FIM Segundo conteudo -->
+    </div>
+    <!-- Fim do conteudo -->
+</body>
+
+</html>

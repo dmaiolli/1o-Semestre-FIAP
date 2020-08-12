@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/fundo.jpg);
+    line-height: 22px;
+    font-size: 16px;
+}
+
+
+
+.conteudoPrincipal {
+    width: 1200px;
+    height: 300px;
+    margin: 0px auto;
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.drones { 
+    height: 300px;
+    margin: 0px auto;
+    text-align: justify;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0px;
+    border-bottom: 1px dashed #7E9F19;
+
+}
+
+a {
+    color: #2C88A7;
+    font-weight: 900;
+    text-decoration: none;
+    float: right;
+}
+
+a:hover {
+    color: #DC143C;
+}
+
+p {
+    height: 220px;
+    border-bottom: 1px dashed #7E9F19;
+    text-align: right;
+}
+
+img {
+    clear: both;
+    width: 120px;
+    height: 150px;
+    border: 1px solid #7E9F19;
+    margin: 10px 30px 0px 0px;
+    padding: 2px;
+    float: left;
+}

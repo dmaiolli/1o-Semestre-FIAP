@@ -1,0 +1,57 @@
+header{
+    width: 98%;
+    height: 15%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner{
+    width: 70%;
+    height: 90%;
+    border: 1px solid;
+}
+
+.miniatura{
+    width: 25%;
+    height: 90%;
+    border: 1px solid;
+}
+
+.barra{
+    width: 98%;
+    height: 5%;
+    border: 1px solid;
+}
+
+.destaque{
+    width: 58%;
+    height: 80%;
+    border: 1px solid;
+}
+
+.miniaturas{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.miniaturas .destaques{
+    width: 45%;
+    height: 48%;
+    margin: 0px 0;
+}
+
+.secundario{
+    flex-direction: row-reverse;
+}
+
+footer{
+    width: 98%;
+    height: 15%;
+    border: 1px solid;
+}

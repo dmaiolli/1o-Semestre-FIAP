@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+/* ---------CABEÇALHO------------ */
+.logo{
+  width: 38%;
+  margin-left: 147px;
+}
+
+.logo img{
+  height:140px;
+}
+
+.estadia{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  border-radius: 8px;
+  height: 137px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 177, 191);
+  box-shadow: 3px 3px 3px rgb(103, 103, 103);
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+
+.input label{
+  margin-bottom: 2px;
+}
+
+#chegada{
+  height: 20px;
+  width: 128px;
+}
+
+#saida{
+  height: 20px;
+  width: 128px;
+}
+
+#adultos{
+  height: 20px;
+  width: 100px;
+}
+
+#criancas{
+  height: 20px;
+  width: 100px;
+}
+
+.reserve-agora{
+  margin-top: 19px;
+}
+
+.input button{
+  cursor: pointer;
+  height: 20px;
+  width: 100px;
+  background-color: rgb(2, 0, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(103, 103, 103);
+}
+
+.input button:hover{
+  height: 24px;
+}
+
+.banner{
+  height: 450px;
+  margin: auto;
+  background: url(../images/banner-pousada.jpg);
+  background-size: cover;
+}
+/* ------------FIM CABEÇALHO-------------- */
+
+/* ---------------RODAPÉ---------------- */
+.informacoes{
+  width: 55%;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.endereco-email-telefone{
+  display: flex;
+  height: 50px;
+}
+
+.endereco-email-telefone p{
+  margin-left: 10px;
+}
+
+.informacoes .icone{
+  font-size: 20px;
+}
+
+.rede-social h3{
+  margin-top: -40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.facebook-whatsapp-twitter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.rede-social .icone{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.facebook:hover{
+  color: rgb(0, 0, 255);
+  font-size: 50px;
+}
+
+.whatsapp:hover{
+  color: rgb(0, 255, 0);
+  font-size: 50px;
+}
+
+.twitter:hover{
+  color: rgb(0,191,255);
+  font-size: 50px;
+}
+/* ---------------FIM RODAPÉ----------------- */
+
+/* ------------PAGINA INICIAL------------ */
+.artigoPaginaInicial{
+  height: 630px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.descricaoPaginaInicial{
+  width: 50%;
+  margin-left: 25px;
+}
+
+.descricaoPaginaInicial h1{
+  margin: 20px 0 15px 0;
+  font-size: 30px;
+}
+
+.descricaoPaginaInicial p{
+  text-indent: 25px;
+}
+
+.fotosPaginaInicial{
+  width: 40%;
+  height: 590px;
+  margin: 20px;
+  padding: 5px 0 0 17px;
+}
+
+.fotosPaginaInicial img{
+  height: 250px;
+  border-radius: 20px;
+  margin: 15px 15px;
+}
+
+.ver-mais{
+  text-align: right;
+  margin: -14px 45px 0 0;
+  font-size: 15px;
+}
+
+.ver-mais a:hover{
+  color: rgb(255, 0, 0);
+}
+/* ---------------FIM PÁGINA INICIAL----------- */
+
+
+/* ---------------ACOMODAÇÕES-------------- */
+.acomodacao{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0;
+  width: 65%;
+  margin: auto;
+}
+
+.acomodacao img{
+  height: 220px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.quarto{
+  width: 60%;
+}
+
+.diaria{
+  width: 100%;
+  border-top: 1px solid rgb(128, 128, 128);
+  margin-top: 25px;
+}
+
+.diaria h4{
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.diaria p{
+  font-size: 30px;
+  color: rgb(0, 25, 254);
+  margin-top: 3px;
+  border: none;
+  float: left;
+}
+
+.selecionar-quarto{
+  float: right;
+  margin-top: -5px;
+}
+
+.selecionar-quarto input{
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  background-color: rgb(2, 0, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(128,128,128);
+}
+/* --------------FIM ACOMODAÇÕES------------- */
+
+/* --------------SERVIÇOS------------- */
+.artigoServicos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.descricaoServicos{
+  padding: 35px 25px;
+  text-indent: 25px;
+  width: 85%;
+}
+
+.descricaoServicos h2{
+  margin-bottom: 15px;
+}
+
+.descricaoServicos ul{
+  text-indent: 50px;
+}
+/* -------------FIM SERVIÇOS--------------- */
+
+/* --------------FOTOS----------------- */
+.artigoFotos{
+  height: auto;
+  padding-top: 20px;
+}
+
+.galeriaFotos{
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  height: auto;
+}
+
+.tituloGaleriaFotos{
+  text-indent: 40px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  padding-bottom: 5px;
+}
+
+.fotosFotos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fotosFotos img{
+  height: 340px;
+  width: 350px;
+  margin: 20px;
+  border-radius: 20px;
+}
+/* -------------------FIM FOTOS--------------- */
+
+/* ----------------CONTATO--------------- */
+
+.artigoContato form{
+  height: 60%;
+  width: 50%;
+  font-size: 16px;
+  background: rgb(31, 177, 191);
+  margin: 15px auto;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.artigoContato .nome{
+  display: flex;
+  flex-direction: row;
+  width: 470px;
+}
+  
+.artigoContato h1{
+  color: #fff;
+  margin-bottom: 2%;
+}
+
+.artigoContato  input, textarea{
+  width: 450px;
+  border: none;
+  margin: 10px;
+  padding: 20px;
+}
+
+.artigoContato input{
+  height: 26px;
+}
+
+.artigoContato .enviar input {
+  background-color: rgb(2, 0, 255);
+  width: 30%;
+  height: auto;
+  color: #fff;
+}
+
+.artigoContato .enviar input:hover{
+  font-weight: bolder;
+}
+
+.artigoContato .enviar{
+  width: 80%;
+  border-top: 1px solid #fff;
+}
+  
+.artigoContato textarea {
+  width: 450px;
+  height: 100px;
+  line-height: 20px;
+  resize: none;
+}
+/* ---------------------FIM CONTATO------------------ */

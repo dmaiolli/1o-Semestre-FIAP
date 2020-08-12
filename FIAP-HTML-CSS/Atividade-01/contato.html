@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contato - Pousada QuarenT.I.</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="cabecalho">
+    <div class="logo">
+      <img src="./images/logo1.png" alt="Logo QuarenT.I.">
+    </div>
+    <form class="estadia" action="" method="post">
+      <div class="input">
+        <label for="chegada">chegada:</label>
+        <input type="date" id="chegada">
+      </div>
+      <div class="input">
+        <label for="saida">saída:</label>
+        <input type="date" id="saida">
+      </div>
+      <div class="input">
+        <label for="adultos">adultos:</label>
+        <input type="number" id="adultos" placeholder="0" min="0">
+      </div>
+      <div class="input">
+        <label for="criancas">crianças:</label>
+        <input type="number" id="criancas" placeholder="0" min="0">
+      </div>
+      <div class="input reserve-agora">
+        <button type="button" name="button">reserve agora</button>
+      </div>
+    </form>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="pagina-inicial.html">Página inicial</a></li>
+      <li><a href="acomodacao.html">Acomodações</a></li>
+      <li><a href="servico.html">Serviços</a></li>
+      <li><a href="fotos.html">Fotos</a></li>
+    </ul>
+  </nav>
+  <div class="banner">
+  </div>
+  <div class="container artigoContato">
+    <form name="formteste" action="" method="post">
+
+      <h1>Contato</h1>
+
+      <p class="nome">
+        <input type="text" name="nome" placeholder="informe seu nome" required="required">
+        <input type="text" name="nome" placeholder="informe seu sobrenome" required="required">
+      </p>
+
+      <p class="email">
+        <input type="email" name="email" placeholder="informe seu email" required="required">
+      </p>
+
+      <p class="assunto">
+        <input type="text" name="assunto" placeholder="informe o assunto" required="required">
+      </p>
+
+      <p class="mensagem">
+        <textarea name="mensagem" placeholder="deixe sua mensagem"></textarea>
+      </p>
+
+      <p class="enviar">
+        <input type="submit" name="enviar" value="Enviar">
+      </p>
+
+    </form>
+  </div>
+  <div class="rodape">
+    <div class="informacoes">
+      <div class="endereco-email-telefone">
+        <span class="fas fa-map-marker-alt icone"></span>
+        <p>Av. Lorem ipsum dolor, 123 - consectetur adipisicing, EL.</p>
+      </div>
+      <div class="endereco-email-telefone">
+        <span class="far fa-envelope icone"></span>
+        <p>loremipsum@dolor.com</p>
+      </div>
+      <div class="endereco-email-telefone">
+        <span class="fas fa-phone icone"></span>
+        <p>(99)12345678 / (11)98765432</p>
+      </div>
+    </div>
+    <div class="rede-social">
+      <h3>Confira nossas redes sociais:</h3>
+      <div class="facebook-whatsapp-twitter">
+        <a href="https://www.facebook.com/"><span class="fab fa-facebook-f icone facebook"></span></a>
+        <a href="https://web.whatsapp.com/"><span class="fab fa-whatsapp icone whatsapp"></span></a>
+        <a href="https://twitter.com/explore"><span class="fab fa-twitter icone twitter"></span></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

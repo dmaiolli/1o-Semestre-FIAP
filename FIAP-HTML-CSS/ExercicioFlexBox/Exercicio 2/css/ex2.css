@@ -1,0 +1,31 @@
+.destaque{
+    width: 55%;
+    height: 50%;
+    border: 1px solid;
+}
+
+.promocao{
+    width: 42%;
+    height: 50%;
+    border: 1px solid;
+}
+
+.quartos{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quarto{
+    width: 32%;
+    height: 80%;
+    border: 1px solid;
+}
+
+footer{
+    width: 98%;
+    height: 20%;
+    border: 1px solid;
+}

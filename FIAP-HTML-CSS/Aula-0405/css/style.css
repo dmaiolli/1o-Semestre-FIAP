@@ -1,0 +1,137 @@
+/* HEADER COM LOGO E MENU*/
+
+.header, .footer {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, .final {
+    color: #fff;
+    font-size: 22px;
+}
+
+.menu-principal {
+    display: flex;
+}
+
+.menu-principal li {
+    margin: 0 10px;
+}
+
+.menu-principal li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.menu-principal li a:hover{
+    color: #b63a53;
+}
+/* FIM DA FORMATAÇÃO DO HEADER */
+
+/* CONTAINER */
+.banner, .video-principal{
+    width: 74%;
+    margin-right: 1%;
+    border: 1px solid #eee;
+}
+
+.box{
+    width: 24%;
+    border: 1px solid #eee;
+    padding: 1%;
+}
+
+.news{
+    border: 1px solid #eee;
+    margin: 10px;
+    height: 23%;
+}
+/* FIM DO CONTAINER */
+
+/* DIVISAO DO CONTAINER EM TRES COLUNAS E DUAS LINHAS */
+.destaque{
+    background: #333;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.feature{
+    border: 1px solid #fff;
+    width: 32%;
+    height: 240px;
+    margin: 10px 0;
+}
+/* FIM DIVISAO DO CONTAINER EM TRES COLUNAS E DUAS LINHAS */
+
+/* VIDEO PRINCIPAL E MINIATURAS A DIREITA */
+/* .video-principal aproveitamos a classe ".banner", veja lá em cima */
+.videos{
+    width: 24%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videos-items{
+    border: 1px solid #eee;
+    height: 130px;
+    width: 45%;
+}
+/* FIM VIDEO PRINCIPAL E MINIATURAS A DIREITA */
+
+/* PRODUTOS DIVISAO EM DUAS LINHAS E UMA PARTE MAIOR A DIREITA */
+.produtos{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produtos-items{
+    border: 1px solid #eee;
+    width: 100%;
+    height: 48%;
+}
+
+.produtos-banner{
+    border: 1px solid #eee;
+    width: 39%;
+    height: 98%;
+}
+/* FIM PRODUTOS DIVISAO EM DUAS LINHAS E UMA PARTE MAIOR A DIREITA */
+
+/* RODAPÉ */
+.redes-sociais{
+    color: #666;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.redes-sociais:hover{
+    color: #fff;
+    font-weight: 600;
+}
+/* FIM RODAPÉ */
+
+
+/* Media queries - vai informar o que te de ser feito quando for detectado um tamanho X de view port */
+
+@media (max-width: 650px) {
+ .header{
+     flex-direction: column;
+     padding: 20px 0;
+ }    
+}

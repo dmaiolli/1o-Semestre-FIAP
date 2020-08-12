@@ -1,0 +1,298 @@
+.texto{
+    width: 60%;
+    height: 65%;
+    display: block;
+}
+
+.texto h2{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.texto p{
+    font-size: 1.2em;
+}
+
+.botao{
+    width: 200px;
+    height: 40px;
+    border-radius: 0.2em;
+    background: #0f3959;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 45px 5px 45px;
+}
+
+.botao:hover{
+    transition: 400ms;
+    font-weight: bold;
+    background: #06243b;
+}
+
+.imagem{
+    width: 450px;
+    height: 350px;    
+    border: 1px solid;
+    border-radius: 0.2em;
+    background: #fff;
+}
+
+header{
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+header img{
+    height: 8vh;
+}
+
+header a{
+    color: #fff;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+header .botao-pagina{
+    width: 120px;
+    height: 30px;
+    background-color: #0f3959;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header .botao-pagina a{
+    margin: auto;
+    flex: 1;
+    padding: 5px 15px 2.5px;
+}
+
+header .botao-pagina a:hover{
+    background: #06243b;
+    transition: 400ms;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao h2{
+    margin: 10px auto;
+    font-size: 2em;
+}
+
+.apresentacao p{
+    margin: 10px;
+    font-size: 1em;
+}
+
+.artigos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 45%;
+    height: 80vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+article .img{
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+}
+
+article p{
+    font-size: 1.1em;
+}
+
+footer{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grupo{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.endereco{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+.endereco a{
+    color: #000;
+    margin-right: 5px;
+}
+
+.endereco a:hover{
+    color: #0f3959;
+    transition: 400ms;
+}
+
+.redes-sociais a{
+    color: #000;
+    font-size: 1.8em;
+    margin-right: 5px;
+}
+
+.redes-sociais a:hover{
+    color: #0f3959;
+    transition: 400ms;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    height: 80vh;
+    width: 80%;
+}
+
+
+main .contato{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .contato .formulario{
+    padding: 70px 50px;
+    background: #fff;
+    width: 60%;
+}
+
+main .contato .formulario legend{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.formulario .caixaFormulario{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.formulario .caixaFormulario .mensagemEntrada{
+    margin: 0 0 35px 0;
+}
+
+.w50{
+    width: 47%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.formulario .caixaFormulario .mensagemEntrada input,
+.formulario .caixaFormulario .mensagemEntrada textarea{
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.formulario .caixaFormulario .mensagemEntrada textarea label{
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 400ms;
+    pointer-events: none;
+}
+
+.formulario .caixaFormulario .mensagemEntrada input[type="submit"]{
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    width: 150px;
+    padding: 12px;
+}
+
+.formulario .caixaFormulario .mensagemEntrada input[type="submit"]:hover{
+    background: #06243b;
+    transition: 400ms;
+}
+
+
+@media(max-width: 630px){
+    .container{
+        width: 85%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .imagem{
+        width: 280px;
+    }
+
+    .texto{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+@media(max-width: 900px){
+    .artigos{
+        justify-content: center;
+    }
+
+    .contato{
+        position: fixed;
+    }
+
+    .formulario{
+        position: relative;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+}

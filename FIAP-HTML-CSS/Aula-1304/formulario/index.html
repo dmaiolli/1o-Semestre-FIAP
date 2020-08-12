@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios em HTML 5</title>
+</head>
+
+<body>
+    <H1>Usando formulários</H1>
+
+    <!-- Inserir o Formularios - atributos -->
+    <!-- ID / NAME - Identificar o formulario
+
+    METHOD - definir o tipo de metodo que sera usado para enviar as info
+             get - padrão
+                Os dados são enviados no campo de URL 
+                Tem limite de 256 caractere por campo
+                busca - link inteligente 
+
+             post - os dados são enviados encapsulados nos campos do form
+                Não tem limite de caractere
+                Dados - login - compra...
+
+    ACTION - definir oque vai acontecer quando o botao de envio (submit) for pressionado
+                Banco de dados - Email - Passar para outra página - Lugar nenhum -->
+
+
+
+    <!-- Inicio do form -->
+    <form action="" method="post" id="dados">
+        <!-- Organizar conteudo de formulario -->
+        <fieldset>
+            <legend>Campos comuns em qualquer HTML</legend>
+
+            <!-- Campo de texto 
+
+                type text - caixa de texto, qualquer valor
+
+                name- Usaremos em JAVA
+
+                ID - Usaremos em JS
+
+                NUNCA repetir os nomes, principalmente o id
+
+                Campos onde o usuario digita - não usar o "value"
+
+                Cuidados com redundancias no placeholder e no label
+
+                MaxLenght - tamanho maximo de caracteres
+
+                AutoFocus - foco automatico no campo - usar apenas em 1
+
+                Label - Etiqueta - rotulo que ira aparecer o nome - o atributo for indica qual o campo deve ganhar 
+                foco quando ele(label) for pressionado
+            -->
+            <p>
+                <!-- O "p" serve para nao deixar eles ficarem um do lado do outro -->
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" value="" placeholder="Digite seu usuário" maxlength="5"
+                    autofocus required>
+            </p>
+
+            <!-- Campo de senha -->
+            <p>
+                <!-- O "p" serve para nao deixar eles ficarem um do lado do outro -->
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" value="" placeholder="Digite sua senha" maxlength="8">
+            </p>
+
+
+            <!-- Campo de seleção unica - radio 
+                 
+                Para que vc consiga marcar e desmarcar algum elemento e que só possa selecionar um, todos eles deverao ter o mesmo name 
+
+                Campos de seleção voce deve usar o value
+            -->
+            <p>
+                <label for="">Selecione sua formação</label>
+                <input type="radio" name="formacao" id="formacao1" value="1">
+                <label for="formacao1">Ensino medio</label>
+
+                <input type="radio" name="formacao" id="formacao2" value="2">
+                <label for="formacao2">Ensino superior</label>
+
+                <input type="radio" name="formacao" id="formacao3" value="3">
+                <label for="formacao3">Pós-graduação</label>
+
+                <input type="radio" name="formacao" id="formacao4" value="4">
+                <label for="formacao4">Mestrado</label>
+
+                <input type="radio" name="formacao" id="formacao5" value="5">
+                <label for="formacao5">Doutorado</label>
+            </p>
+
+
+            <!-- Campo de seleção multipla - checkbox 
+            Deixa marcado as opções
+            -->
+
+
+            <p>
+                <label for="">Areas de Interesse</label>
+
+                <input type="checkbox" name="interesse" id="interesse1" value="1" checked>
+                <label for="interesse1">Desenvolvimento Web</label>
+
+                <input type="checkbox" name="interesse" id="interesse2" value="2" checked>
+                <label for="interesse2">Banco de Dados</label>
+
+                <input type="checkbox" name="interesse" id="interesse3" value="3" checked>
+                <label for="interesse3">Java</label>
+            </p>
+
+            <!-- seleção - caixa suspensa - dropdown - NÃO É INPUT -->
+            <p>
+                Estado Civil:
+                <select name="civil" id="civil">
+                    <option selected disabled>Selecione a opção</option>
+                    <option value="0">Solteiro</option>
+                    <option value="1">Casado</option>
+                    <option value="2">Separado</option>
+                    <option value="3">Outros</option>
+                </select>
+            </p>
+
+
+            <!-- Seleção para envio de Arquivo -->
+            <p>
+                <label for="arquivo">Envie seu arquivo</label>
+                <input type="file" id="arquivo">
+            </p>
+
+            <!-- Texto de varias linhas -->
+
+            <p>
+                <label for="comentario">Envie seus comentarios</label><br>
+                <textarea name="comentario" id="comentario" placeholder="Seus comentarios"></textarea>
+            </p>
+        </fieldset>
+
+
+        <!-- Aula 13 - 04 - Controles HTML 5 -->
+
+        <FIeldset>
+            <legend>Controles Formulario HTML 5</legend>
+            <!-- CAMPO DE DATA -->
+            <p>
+                <label for="data">Data da entrega</label>
+                <input type="date" id="data">
+            </p>
+
+            <!-- CAMPO DE DATA E hora -->
+            <p>
+                <label for="hora">Hora da entrega</label>
+                <input type="time" id="hora">
+            </p>
+
+            <!-- CAMPO DE DATA E HORA -->
+            <p>
+                <label for="dataHora">Data e hora da entrega</label>
+                <input type="datetime-local" id="dataHora">
+            </p>
+
+            <!-- CAMPO DE MES -->
+            <p>
+                <label for="mes">Mês da entrega</label>
+                <input type="month" id="mes">
+            </p>
+
+            <!-- CAMPO DE SEMANA -->
+            <p>
+                <label for="semana">Semana da entrega</label>
+                <input type="week" id="semana">
+            </p>
+
+            <!-- CAMPO DE DATA E hora -->
+            <p>
+                <label for="hora">Hora da entrega</label>
+                <input type="time" id="hora">
+            </p>
+
+            <!-- CAMPO DE NUMERO -->
+            <p>
+                <label for="numero">Numeros</label>
+                <input type="number" id="numero">
+            </p>
+
+            <!-- CAMPO PARA NUMEROS COM ESCALAS DE VALORES
+                    min - numero minimo - incial
+                    max - numero maximo - final
+                    step - variação do numero 
+                 -->
+            <p>
+                <label for="numeros1">Numeros com escalas</label>
+                <input type="number" id="numeros1" min="10" max="100" step="10">
+            </p>
+
+            <!-- GERA UMA BARRA DE VALORES
+                    min - numero minimo - incial
+                    max - numero maximo - final
+                    step - variação do numero 
+                 -->
+            <p>
+                <label for="barra">Barra de Valores</label>
+                <input type="range" id="barra" min="10" max="100" step="10">
+            </p>
+
+            <!-- CAMPO DE TELEFONE -->
+            <p>
+                <label for="fone">Telefone</label>
+                <input type="tel" id="fone">
+            </p>
+
+            <!-- CAMPO DE EMAIL -->
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </p>
+
+            <!-- CAMPO DE URL -->
+            <p>
+                <label for="url">URL</label>
+                <input type="url" id="url">
+            </p>
+
+            <!-- CAMPO DE PESQUISA -->
+            <p>
+                <label for="busca">Pesquisa</label>
+                <input type="search" id="busca">
+            </p>
+
+            <!-- CAMPO DE CORES -->
+            <p>
+                <label for="cor">Cores</label>
+                <input type="color" id="cor">
+            </p>
+
+        </FIeldset>
+
+        <p>
+            <!-- Botao de envio -->
+            <input type="submit" value="Enviar">
+
+            <!-- Botao de reset -->
+            <input type="reset" value="Resetar">
+
+            <!-- Botao de chamar JS -->
+            <input type="button" value="Chamar JS">
+
+        </p>
+
+        <p>
+
+            <!-- botão de envio -->
+
+            <button type="submit" name="button">Enviar</button>
+
+            <!-- botão de reset -->
+
+            <button type="reset" name="button">Limpar</button>
+
+            <!-- botão chamar um JS -->
+
+            <button type="button" name="button">Chamar JS</button>
+
+        </p>
+    </form>
+
+
+
+</body>
+
+</html>

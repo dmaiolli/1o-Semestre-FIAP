@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conteudo-tabela {
+    text-align: center;
+    margin: 10px auto;
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+.conteudo-tabela img {
+    width: 100px;
+    height: 70px;
+    margin: auto;
+}
+
+.conteudo-tabela thead th {
+    background-color: aqua;
+    border: 1px solid rgb(233, 230, 230);
+    font-weight: 900;
+}
+
+.conteudo-tabela th, td {
+    padding: 15px;
+}
+
+.conteudo-tabela tbody td {
+    border: 1px solid rgb(233, 230, 230);
+}
+
+.conteudo-tabela tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.conteudo-tabela tbody tr:hover {
+    color: aqua;
+    font-weight: 900;
+}
+
+.conteudo-tabela tfoot tr {
+    text-align: center;
+    border: 1px solid rgb(233, 230, 230);
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+}
+
+.container {
+    /* Pega o conteudo pai e aplica a % em relação ao pai da classe */
+    width: 80%;
+    min-width: 800px;
+    height: 600px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 7px;
+    /* Quando colocado no elemento pai, ele alinhara seus filhos */
+    display: flex;
+    /* Define onde irao se posicionar os filhos */
+    justify-content: center;
+    align-items: center;
+}
+
+.primary, .secundary {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    /* Mudando o posicionamento dos elementos - column fica um abaixo do outro
+        O padrao do flex é row (linha) um ao lado do outro */
+    flex-direction: column;
+    /* Define onde irao se posicionar(começar)   os filhos */
+    justify-content: center;
+    /* Alinhamento vertical */
+    align-items: center;
+}
+
+.primary {
+    width: 40%;
+    background: #dc143c;
+    border-radius: 7px 0 0 7px;
+    color: white;
+}
+
+.primary h2 {
+    margin: 20px 0px 40px;
+}
+
+/* Icone grande - como esta no html como fonte, usaremos padrao de fontes */
+.icone {
+    font-size: 300px;
+    padding: 20px 0;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.redeSocial {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.redeSocial:hover{
+    color: #5a0216;
+}
+
+/* ------------------------------ FORM --------------------------- */
+
+#contato {
+    width: 100%;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato input[type="tel"],
+#contato textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    margin: 5px;
+    height: 60px;
+    padding: 10px 10px 10px 50px;
+    background-repeat: no-repeat;
+    background-position: 5px center;  
+    border: 1px solid #f9f9f9;  
+}
+
+#contato textarea {
+    height: 160px;
+    /* Nao permite que o text area redimensione manualmente */
+    resize: none;
+    padding: 15px;
+}
+
+#contato button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #dc143c;
+    color: #fff;
+    font-weight: 700;
+    float: right;
+    cursor: pointer;
+}
+
+#contato input:focus, 
+#contato textarea:focus{
+    outline: none;
+    border: 1px solid #dc143c;
+}
+
+.user{background: url(../img/nome.png);}
+.email{background: url(../img/enviar.png);}
+.celular{background: url(../img/telefone.png);}
+.phone{background: url(../img/icon.png);}
+
+.user:hover{background: url(../img/nome.png);}
+.email:hover{background: url(../img/enviar.png);}
+.celular:hover{background: url(../img/telefone.png);}
+.phone:hover{background: url(../img/icon.png);}

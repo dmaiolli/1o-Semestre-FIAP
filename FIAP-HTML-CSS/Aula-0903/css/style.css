@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap');
+
+h1, h2, h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #1933b5;
+  font-weight: 900;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  color: #f60;
+  background-color: #000;
+}
+
+
+
+.texto-azul{color: #369;}
+.texto-vermelho{color: #900;}
+
+
+.caixas{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+  margin: 10px 20px 30px 40px;
+  float: left;
+  text-align: center;
+}
+
+.sem-float{
+  clear: both;
+}
+
+img{
+  width: 400px;
+  height: 400px;
+
+}

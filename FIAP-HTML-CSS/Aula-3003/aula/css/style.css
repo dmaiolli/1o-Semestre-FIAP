@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(141, 140, 140);
+}
+
+
+/* O ponto na css indica que é uma div  */
+.conteudo-principal {
+    /* Largura */
+    width: 1200px;
+
+    /* Altura */
+    height: auto;
+
+    /* Inserindo uma borda na div */
+    border: 1px solid #000;
+    /* auto deixa a div centralizada */
+    margin: 30px auto;
+    /* Alinhamento de texto */
+    text-align: center;
+}
+
+.elementos {
+    width: 1100px;
+    height: auto;
+    background: #CCC;
+    margin: 10px auto;
+    text-align: left;
+
+    /* Preenchimento ou margem interna */
+    padding: 20px;
+    box-sizing: border-box;
+
+    line-height: 30px;
+}
+
+.elementos h2 {
+    font-size: 30px;
+    color: rgb(31, 29, 139);
+}
+
+.elementos p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    float: left;
+    margin: 10px 20px 20px 18px;
+}
+
+.fundoCor {
+    background-color: cyan;
+}
+
+.fundoImagem {
+    /* ".." Serve para retroceder um nivel de pasta */
+    background: url(../images/icone.png);
+}
+
+.fundoImagemNaoRepete {
+    background: url(../images/icone.png);
+    background-repeat: no-repeat;
+}
+
+.fundoImagemRepeteX {
+    background: url(../images/icone.png);
+    background-repeat: repeat-x;
+}
+
+.fundoImagemRepeteY {
+    background: url(../images/icone.png);
+    background-repeat: repeat-y;
+}
+
+.fundoImagemPosicao1 {
+    background: url(../images/icone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fundoImagemPosicao2 {
+    background: url(../images/icone.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.fundoImagemPosicao3 {
+    background: url(../images/icone.png);
+    background-repeat: no-repeat;
+    background-position: 5% bottom;
+}
+
+.fundoImagemPosicao4 {
+    background: url(../images/icone.png);
+    background-repeat: no-repeat;
+    background-position: 25px center;
+}
+
+.banner {
+    clear: both;
+    width: 1160px;
+    height: 350px;
+    border: 1px solid #000;
+    margin: 10px auto;
+
+    background: url(../images/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    /* ^^ Contain: background sera redimensionado para ter o maior tamanho possivel dentro do container
+          Cover: ter o menor tamanho possivel para que ela ocupe o container todo */
+}
+
+.rodape {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+
+
+

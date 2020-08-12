@@ -1,0 +1,16 @@
+Position - Posição dos elementos
+
+
+Com position podemos usar 4 valores(propriedades) - Só serão aplicadas se vc tiver position, menos o static que vem por padrão. Top - bottom - left - right
+
+Vamos usar apenas 2 - top/bottom - left/right
+
+Padrão é static - todo mundo tem ele por padrão
+
+Relative: vai mudar o posicionamento do elemento que receber esse atributo, pegando como referencia o lugar onde ele foi criado, lembrando que quando criado ele era STATIC
+
+Absolute: create a new context - left the initial position and the element in the bottom, start to use his position. He changes the position in the page, because he is an absolute position in relation with the browser.
+Example: if put in right 0, become in the right margin, isnt the position where he it was created
+
+Putting the div intern(child of "terceira div"), he doesnt respect the father, and follow the the position absolute,
+so that he respects the father, we need to change de position of the father(static) to absolute or relative(more common)

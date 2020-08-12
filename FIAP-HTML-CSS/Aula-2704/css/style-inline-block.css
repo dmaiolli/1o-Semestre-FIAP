@@ -1,0 +1,20 @@
+/* 
+                                INLINE BLOCK
+    ele deixará os elementos inline com as propriedades do block, respeita largura e altura,
+    mas elementos inline são considerados texto, e o texto terá um espaçamento que "não existe"(enter). Conforme você aumenta
+    a quantidade de conteudo o container sai do fluxo, fica mais alto que os demais.
+*/
+
+.box {
+    display: inline-block;
+    width: 20%;
+    min-width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}

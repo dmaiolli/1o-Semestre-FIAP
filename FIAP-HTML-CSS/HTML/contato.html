@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="./paginainicial.html"><img src="./logo/logo.jpg" alt=""></a>
+        </div>
+
+        <div class="botao-pagina">
+            <a href="./paginainicial.html">Voltar</a>
+        </div>
+    </header>
+    <main>
+        <div class="contato">
+            <form class="formulario">
+                <legend>Mande uma mensagem</legend>
+                <div class="caixaFormulario">
+                    <fieldset class="mensagemEntrada w50">
+                        <input type="text" name="fNome" required>
+                        <label for="fNome">Primeiro nome</label>
+                    </fieldset>
+                    <fieldset class="mensagemEntrada w50">
+                        <input type="text" name="uNome" required>
+                        <label for="uNome">Ultimo nome</label>
+                    </fieldset>
+                    <fieldset class="mensagemEntrada w50">
+                        <input type="text" name="email" required>
+                        <label for="email">Email</label>
+                    </fieldset>
+                    <fieldset class="mensagemEntrada w50">
+                        <input type="number" name="phone" required>
+                        <label for="phone">Celular</label>
+                    </fieldset>
+                    <fieldset class="mensagemEntrada w100">
+                        <textarea name="comentario" required></textarea>
+                        <label for="comentario">Escreva sua mensagem aqui...</label>
+                    </fieldset>
+                    <fieldset class="mensagemEntrada w100">
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
