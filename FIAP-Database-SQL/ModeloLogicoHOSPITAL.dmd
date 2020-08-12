@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModeloLogicoHOSPITAL" id="C6E19398-3256-C9A1-41E1-8ECE988DE838" version="3.5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 00:34:12 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C6E19398-3256-C9A1-41E1-8ECE988DE838</designId>
+</OSDM_Design>

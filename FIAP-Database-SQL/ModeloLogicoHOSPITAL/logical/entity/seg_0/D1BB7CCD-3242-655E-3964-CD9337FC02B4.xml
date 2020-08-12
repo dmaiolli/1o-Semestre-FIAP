@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D1BB7CCD-3242-655E-3964-CD9337FC02B4" name="T_UNIDADE_HOSPITALAR">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:40:26 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_UND_HOSPITALAR" id="60AD9216-86A2-BFE9-F51B-C11D9886AC58">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:40:48 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_UND_HOSPITALAR" id="36B3965F-9A26-FBE5-2FC5-2E5E7FF7804A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:41:22 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_FUNDACAO" id="42746A3F-E74B-593B-3280-7AE1043497E5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:42:13 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DDD" id="467C8967-A601-DE7E-803B-EF777867293A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:42:27 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TELEFONE" id="D5C2B5B1-5B9E-E7D3-8EF9-15B5E1B31945">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:42:40 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ESTADO" id="31571589-4BB8-8481-18DA-6C60ECB6D77D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:42:52 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG_ESTADO" id="C625F4FD-8A53-D5D6-610D-7D3016022797">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:43:35 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CIDADE" id="ED5FBB00-3317-914F-9926-E5006F0EC1ED">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:44:20 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_BAIRRO" id="0E2BD91D-5940-1A32-59E5-D7695E51D60B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:45:11 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EBE9FDDF-6DC7-9118-B409-7B119E46D79F" name="T_UNIDADE_HOSPITALAR PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:41:20 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>60AD9216-86A2-BFE9-F51B-C11D9886AC58</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

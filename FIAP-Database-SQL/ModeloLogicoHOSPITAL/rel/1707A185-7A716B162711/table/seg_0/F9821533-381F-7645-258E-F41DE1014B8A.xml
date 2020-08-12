@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9821533-381F-7645-258E-F41DE1014B8A" name="T_MEDICO">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>4F9E10BB-77F5-DBC1-95F7-85256F9B0C5F</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MEDICO" id="6C06DD96-17A3-96F5-4D03-3BABFE54866C">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>30F8AD4F-D699-071A-1E8A-A68C83A8C4D5</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CRM" id="09A03755-B51F-BB47-E01A-607BE88C884D">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>C6408D3A-306A-B111-53F6-F5D23BCA019C</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_MEDICO" id="B780BE3C-7C36-3B88-4F9F-E56F73A94C4B">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>716261D3-5E95-86B1-00BC-9F8ED4CF1801</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ESPECIALIDADE" id="49A6B0D6-9E00-D588-FC08-3CECE34AB9D7">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>63383A41-B090-4512-30B7-46E6DF2131A0</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B80C7B4E-F0F6-BCB0-E4C8-7087441EE6C8" name="T_MEDICO_PK">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>81C45679-4A9C-5BD3-DBC9-8BC8E78BAA3F</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C06DD96-17A3-96F5-4D03-3BABFE54866C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

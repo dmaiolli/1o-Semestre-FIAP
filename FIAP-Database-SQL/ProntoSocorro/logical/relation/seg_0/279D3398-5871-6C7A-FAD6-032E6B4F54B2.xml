@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="REL_HOSP_CONSULTA" directorySegmentName="seg_0" id="279D3398-5871-6C7A-FAD6-032E6B4F54B2">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:27:23 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<sourcePk>EBE9FDDF-6DC7-9118-B409-7B119E46D79F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D1BB7CCD-3242-655E-3964-CD9337FC02B4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8947B2EF-2900-9B85-6880-B22D0025DE51</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

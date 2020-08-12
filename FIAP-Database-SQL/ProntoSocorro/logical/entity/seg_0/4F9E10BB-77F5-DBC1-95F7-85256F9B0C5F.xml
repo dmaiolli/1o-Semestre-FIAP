@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F9E10BB-77F5-DBC1-95F7-85256F9B0C5F" name="T_MEDICO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:37:07 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MEDICO" id="30F8AD4F-D699-071A-1E8A-A68C83A8C4D5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:37:17 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CRM" id="C6408D3A-306A-B111-53F6-F5D23BCA019C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:38:48 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MEDICO" id="716261D3-5E95-86B1-00BC-9F8ED4CF1801">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:39:09 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ESPECIALIDADE" id="63383A41-B090-4512-30B7-46E6DF2131A0">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:39:23 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81C45679-4A9C-5BD3-DBC9-8BC8E78BAA3F" name="T_MEDICO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2020-03-12 01:40:05 UTC</createdTime>
+<ownerDesignName>ProntoSocorro</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>30F8AD4F-D699-071A-1E8A-A68C83A8C4D5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

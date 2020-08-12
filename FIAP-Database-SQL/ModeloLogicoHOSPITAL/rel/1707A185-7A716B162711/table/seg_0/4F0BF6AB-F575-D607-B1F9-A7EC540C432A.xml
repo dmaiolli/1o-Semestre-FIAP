@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F0BF6AB-F575-D607-B1F9-A7EC540C432A" name="T_CONSULTA_PS">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>8947B2EF-2900-9B85-6880-B22D0025DE51</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_UNIDADE_HOSPITALAR_ID_UND_HOSPITALAR" id="01D8D101-14C1-C0B7-BCC3-B6C8B8FC9C89">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>BE120ECF-B39A-3ED8-9BBE-4544378F6707</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA20482E-4121-9162-51A1-681010B50584" referredColumn="BD029B80-9138-A5E7-C5D3-4B30AB3808A1"/>
+</associations>
+</Column>
+<Column name="NR_CONSULTA" id="34ED45AE-3D0B-012F-B372-3031787779D2">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>A95DE57A-A2A0-930D-B197-EC451D94DF81</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_PACIENTE_ID_PACIENTE" id="1A2FBBF3-B00E-0908-0E85-1466B982AF70">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>914C8801-42CF-78A5-E78D-1BC26D81380C</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16EC94B8-591B-2F22-29B2-C6E175502F33" referredColumn="7105A3A7-281E-9BBE-28AB-9E1B578CCF78"/>
+</associations>
+</Column>
+<Column name="T_MEDICO_ID_MEDICO" id="5271745C-4DCA-EB34-3A3A-B1205F2E51C6">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>D923F859-9A4E-BDF5-B45E-49164F0202EE</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E65AB48-9835-94E2-78A3-D3F4526316DF" referredColumn="6C06DD96-17A3-96F5-4D03-3BABFE54866C"/>
+</associations>
+</Column>
+<Column name="DT_CONSULTA" id="391C44D5-98F4-838A-3CFA-82A5D7874D4A">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>79A9A473-0CE4-9362-98CE-44EAB6C9B493</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="093169E0-3886-DA85-0E58-A575880CFD53" name="T_CONSULTA_PS_PK">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>2A06B52E-2A6B-7D58-5DEE-BBD4182ADAE4</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34ED45AE-3D0B-012F-B372-3031787779D2"/>
+<colUsage columnID="01D8D101-14C1-C0B7-BCC3-B6C8B8FC9C89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07D8D263-8082-667A-6542-72218981C5FF" name="T_CONSULTA_PS_T_UNIDADE_HOSPITALAR_FK">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>279D3398-5871-6C7A-FAD6-032E6B4F54B2</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01D8D101-14C1-C0B7-BCC3-B6C8B8FC9C89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89BABBA2-D62B-681A-A3B3-B168D468C737" name="T_CONSULTA_PS_T_MEDICO_FK">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>862DA1DD-5E8C-5F0F-B3D0-4D16FE6522FD</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5271745C-4DCA-EB34-3A3A-B1205F2E51C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3468959-0BEF-E2CD-3387-E8DC16A9F6C5" name="T_CONSULTA_PS_T_PACIENTE_FK">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:33:11 UTC</createdTime>
+<generatorID>29561B8D-EDE9-9746-DD80-F956CADC9A4A</generatorID>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A2FBBF3-B00E-0908-0E85-1466B982AF70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

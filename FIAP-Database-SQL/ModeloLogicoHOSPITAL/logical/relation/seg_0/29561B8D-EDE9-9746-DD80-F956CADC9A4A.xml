@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="REL_PACIENTE_CONSULTA" directorySegmentName="seg_0" id="29561B8D-EDE9-9746-DD80-F956CADC9A4A">
+<createdBy>denys</createdBy>
+<createdTime>2020-03-26 01:10:14 UTC</createdTime>
+<ownerDesignName>ModeloLogicoHOSPITAL</ownerDesignName>
+<engineerTo>
+<item key="1707A185-D553-E4E4-06C8-7A716B162711" value="true"/>
+</engineerTo>
+<sourcePk>D0ACE71A-1C4D-414A-CCBE-BF612BDBDA63</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F264DA53-2969-E66E-1A57-5827AEF574B9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8947B2EF-2900-9B85-6880-B22D0025DE51</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
