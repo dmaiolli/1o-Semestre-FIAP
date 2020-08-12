@@ -1,0 +1,39 @@
+package br.com.fiap.bank.domain;
+
+public class Cliente {
+
+	private String nome;
+	private int documento;
+	private String turma;
+	
+	public Cliente(String nome, int documento) {
+		this.nome = nome;
+		this.documento = rm;
+		this.turma = turma;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getRm() {
+		return documento;
+	}
+
+	public void setRm(int rm) {
+		this.documento = rm;
+	}
+
+	public String getTurma() {
+		return turma;
+	}
+
+	public void setTurma(String turma) {
+		this.turma = turma;
+	}
+
+}

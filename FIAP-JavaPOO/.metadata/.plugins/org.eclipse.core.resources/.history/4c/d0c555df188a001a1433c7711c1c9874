@@ -1,0 +1,15 @@
+package classes;
+
+public class AreaCirc {
+	
+	double raio;
+	double pi;
+	
+	public AreaCirc(double raio, double pi) {
+		this.raio = raio;
+		this.pi = pi;
+	}
+	
+	
+
+}

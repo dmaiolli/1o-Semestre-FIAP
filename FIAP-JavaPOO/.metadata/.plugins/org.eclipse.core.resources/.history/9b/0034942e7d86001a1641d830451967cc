@@ -1,0 +1,12 @@
+package ex01;
+
+import javax.swing.JOptionPane;
+
+public class AlunoTeste {
+	
+	public static void main(String[] args) {
+		
+		int matricula = Integer.parseInt(JOptionPane.showInputDialog("Informe sua matricula: "));
+	}
+
+}

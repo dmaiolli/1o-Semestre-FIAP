@@ -1,0 +1,21 @@
+package lojinha;
+
+public class Produto {
+	
+	private int quantidade;
+	private double preco;
+	private double desconto;
+	
+	Para multiplicacao
+
+	public Produto(int quantidade, double preco, double desconto) {
+		super();
+		this.quantidade = quantidade;
+		this.preco = preco;
+		this.desconto = desconto;
+	}
+	
+	public double calculaTotal() {
+		return quantidade * preco * (desconto / 100);
+	}
+}

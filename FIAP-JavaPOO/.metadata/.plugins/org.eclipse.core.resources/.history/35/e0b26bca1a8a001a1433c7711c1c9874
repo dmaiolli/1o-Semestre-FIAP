@@ -1,0 +1,16 @@
+package classes;
+
+public class AreaCirc {
+
+	double raio;
+	final static double pi;
+
+	public AreaCirc(double raioInicial) {
+		raio = raioInicial;
+	}
+
+	double area() {
+		return pi * Math.pow(raio, 2);
+	}
+
+}

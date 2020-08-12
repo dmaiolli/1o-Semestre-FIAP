@@ -1,0 +1,12 @@
+package ex01;
+
+public class Aluno {
+	
+	private int matricula;
+	private String nome;
+	private double nota1;
+	private double nota2;
+	
+	
+
+}

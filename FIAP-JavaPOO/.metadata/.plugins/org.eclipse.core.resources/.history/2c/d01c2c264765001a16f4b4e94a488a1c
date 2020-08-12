@@ -1,0 +1,18 @@
+package fundamentos;
+
+public class PrimeiroPrograma {
+
+	public static void main(String[] args) {
+
+		// Uma sentença de códigos termina com ; 
+		System.out.println("Primeiro Programa parte #01");
+		
+		/*
+		
+		Comentário de várias linhas
+		
+		 */
+		System.out.println("Primeiro Programa parte #02");
+		System.out.println("FIM"); //Aqui tb funciona!
+	}
+}

@@ -1,0 +1,13 @@
+package ex01;
+
+public class AlunoTeste {
+	
+	public static void main(String[] args) {
+		
+		Aluno aluno1 = new Aluno(86487, "Denys", 10.0, 9.7, 8.0);
+		
+		aluno1.media();
+		aluno1.notaFinal();
+	}
+
+}

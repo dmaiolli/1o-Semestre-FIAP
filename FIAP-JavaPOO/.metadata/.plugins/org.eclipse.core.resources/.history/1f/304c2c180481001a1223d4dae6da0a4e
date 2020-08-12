@@ -1,0 +1,11 @@
+package lojinha;
+
+public class TesteProduto {
+	
+	public static void main(String[] args) {
+		
+		double valorTotal = 0;
+		int item = 1;
+	}
+
+}

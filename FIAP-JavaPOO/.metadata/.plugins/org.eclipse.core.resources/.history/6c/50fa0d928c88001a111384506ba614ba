@@ -1,0 +1,14 @@
+package classes;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data data = new Data();
+		
+		Data data1 = new Data(17, 12, 2001);
+		System.out.println(data.dataFormatada());
+		data.imprimirDataFormatada();
+	}
+
+}

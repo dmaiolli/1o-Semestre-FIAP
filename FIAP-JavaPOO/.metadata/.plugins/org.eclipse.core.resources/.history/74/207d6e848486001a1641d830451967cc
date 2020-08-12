@@ -1,0 +1,15 @@
+package ex03;
+
+public class Voo {
+
+	private int numeroDoVoo;
+	private Data data;
+	private boolean[] lugaresOcupados;
+
+	public Voo(int numero, Data data) {
+		this.numeroDoVoo = numero;
+		this.data = data;
+		this.lugaresOcupados = new boolean[100];
+	}
+
+}

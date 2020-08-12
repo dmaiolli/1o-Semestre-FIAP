@@ -1,0 +1,14 @@
+package ex03;
+
+public class Voo {
+	
+	private int numeroDoVoo;
+	private Data data;
+	private int totalLugares;
+	private int[] lugaresOcupados;
+	
+	public Voo(int numeroDoVoo, int Data data) {
+		
+	}
+	
+}

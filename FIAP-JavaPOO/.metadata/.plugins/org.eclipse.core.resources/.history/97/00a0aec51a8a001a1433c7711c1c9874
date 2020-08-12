@@ -1,0 +1,13 @@
+package classes;
+
+public class AreaCircTeste {
+	
+	public static void main(String[] args) {
+		
+		AreaCirc a = new AreaCirc(5);
+		AreaCirc.pi = 3.1415; // O pi está como static, logo isso significa que ele faz parte da classe e não da instancia
+		
+		System.out.println(a.area());
+	}
+
+}

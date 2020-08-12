@@ -1,0 +1,14 @@
+package ex02;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data data = new Data(17, 12, "Dezembro", 2001);
+		
+		System.out.println(data.validaData());
+		
+		data.compara(17, 12, 2002);
+	}
+
+}

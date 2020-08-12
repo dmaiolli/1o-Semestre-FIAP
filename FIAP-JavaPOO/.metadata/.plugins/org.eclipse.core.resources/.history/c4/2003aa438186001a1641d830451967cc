@@ -1,0 +1,14 @@
+package ex02;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data data = new Data(17, 12, 2001);
+		System.out.println(data);
+		
+		Data data2 = data.clone();
+		System.out.println(data2);
+	}
+	
+}

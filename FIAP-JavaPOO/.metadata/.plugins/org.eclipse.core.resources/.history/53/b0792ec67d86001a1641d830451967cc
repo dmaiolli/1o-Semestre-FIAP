@@ -1,0 +1,24 @@
+package ex01;
+
+import javax.swing.JOptionPane;
+
+public class AlunoTeste {
+	
+	public static void main(String[] args) {
+		
+		int matricula = Integer.parseInt(JOptionPane.showInputDialog("Informe sua matricula: "));
+		String nome = JOptionPane.showInputDialog("Digite seu nome: ");
+
+		Aluno aluno = new Aluno(matricula, nome);
+		
+		double nota = Double.parseDouble(JOptionPane.showInputDialog("Informe a nota da prova 1: "));
+		aluno.setNota1(nota);
+		
+		nota = Double.parseDouble(JOptionPane.showInputDialog("Informe a nota da prova 2: "));
+		aluno.setNota2(nota);
+
+		double trabalho = Double.parseDouble(JOptionPane.showInputDialog("Informe a nota do trabalho: "));
+		aluno.setTrabalho(trabalho);
+	}
+
+}

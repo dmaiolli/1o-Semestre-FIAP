@@ -1,0 +1,19 @@
+package classes;
+
+public class AreaCirc {
+	
+	double raio;
+	double pi;
+	
+	public AreaCirc(double raioInicial, double pi) {
+		raio = raioInicial;
+		pi = 3.14;
+	}
+	
+	double area() {
+		return raio * raio * pi;
+	}
+	
+	
+
+}

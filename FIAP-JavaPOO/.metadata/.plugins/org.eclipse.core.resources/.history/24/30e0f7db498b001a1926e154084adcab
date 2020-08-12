@@ -1,0 +1,19 @@
+package br.com.fiap.bank.domain;
+
+public class PessoaFisica extends Cliente {
+
+	private String turma;
+
+	public PessoaFisica(String turma) {
+		this.turma = turma;
+	}
+
+	public String getTurma() {
+		return turma;
+	}
+
+	public void setTurma(String turma) {
+		this.turma = turma;
+	}
+
+}

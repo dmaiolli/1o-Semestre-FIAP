@@ -1,0 +1,15 @@
+package br.com.fiap.bank.domain;
+
+public class PessoaJuridica {
+
+	private String nome;
+	private int cnpj;
+	private String nomeFantasia;
+
+	public PessoaJuridica(String nome, int cnpj) {
+		super();
+		this.nome = nome;
+		this.cnpj = cnpj;
+	}
+
+}

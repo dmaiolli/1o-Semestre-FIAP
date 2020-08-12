@@ -1,0 +1,33 @@
+package FIAPark;
+
+import java.util.Date;
+
+public class Ticket {
+	
+	private Veiculo veiculo;
+	private Date entrada;
+	private Date saida;
+	private double valor;
+	
+	public Ticket(Veiculo veiculo) {
+		veiculo.setPlaca(veiculo.getPlaca().replace('-', 'A'));
+		this.veiculo = veiculo;
+		this.entrada = new Date();
+		this.saida = null;
+		this.valor = 0.;
+	}
+	
+	public Ticket(Veiculo veiculo, Date entrada) {
+		this(veiculo);
+		this.entrada = entrada;
+		this.saida = null;
+		this.valor = 0.;
+	}
+	
+	public Ticket(Veiculo veiculo, Date entrada, Date saida, double valor) {
+		this(veiculo, entrada);
+		this.saida = saida;
+		this.valor = valor;
+	}
+
+}

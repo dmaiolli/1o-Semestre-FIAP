@@ -1,0 +1,36 @@
+package sistemaBanco;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+
+		String rua = JOptionPane.showInputDialog("Rua: ");
+		System.out.printf("%s", rua);
+		int numero = Integer.parseInt(JOptionPane.showInputDialog("Numero: "));
+		System.out.printf("%d", numero);
+		String complemento = entrada.next();
+		String bairro = entrada.next();
+		int cep = entrada.nextInt();
+		
+		Endereco endereco = new Endereco(rua, numero, complemento, bairro, cep);
+		
+		String nome = entrada.next();
+		int cpf = entrada.nextInt();
+		
+		Cliente cliente = new Cliente(nome, cpf, endereco);
+		
+		double saldo = entrada.nextDouble();
+		
+		ContaCorrente contaCorrente = new ContaCorrente(saldo, cliente);
+		
+		System.out.printf("SALDO : %2.f\nNOME: %s\nCPF: %d\nRUA: %s\n Nº: %d\nCOMPL.: %s\nBAIRRO: %s\nCEP: %d", contaCorrente.getSaldo(), cliente.getNome(), cliente.getCpf(), endereco.getRua(), endereco.getNumero(), endereco.getComplemento(), endereco.getBairro(), endereco.getCep());
+		
+		entrada.close();
+
+	}
+}

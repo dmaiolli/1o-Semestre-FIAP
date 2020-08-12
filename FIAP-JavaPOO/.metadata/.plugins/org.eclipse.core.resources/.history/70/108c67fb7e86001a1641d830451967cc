@@ -1,0 +1,19 @@
+package ex02;
+
+public class Data {
+
+	private int dia;
+	private int mes;
+	private String mesExtenso;
+	private int ano;
+
+	public Data(int dia, int mes, String mesExtenso, int ano) {
+		if (dia < 1 || dia > 31 || mes < 1 || mes > 12 || ano < 1900) {
+			this.dia = 01;
+			this.mes = 01;
+			this.ano = 0001;
+		} else {
+			this.dia = dia;
+			this.mes = mes;
+			this.ano = ano
+		}

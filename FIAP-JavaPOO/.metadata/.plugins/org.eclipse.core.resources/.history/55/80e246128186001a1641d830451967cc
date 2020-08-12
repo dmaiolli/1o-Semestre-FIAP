@@ -1,0 +1,11 @@
+package ex02;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data data = new Data(-1, 2, -2200);
+		System.out.println(data);
+	}
+	
+}
